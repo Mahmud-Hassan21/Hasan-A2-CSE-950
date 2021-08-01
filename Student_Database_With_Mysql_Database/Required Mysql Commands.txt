@@ -1,0 +1,37 @@
+---------------
+# 1 --> Create:
+---------------
+
+=================================
+# create student database & table 
+=================================
+
+CREATE DATABASE student;
+
+CREATE TABLE student.student(
+    ID INT NOT NULL AUTO_INCREMENT,
+    Name VARCHAR(25),
+    Roll VARCHAR(15),
+    Batch VARCHAR(15),
+    Department VARCHAR(25),
+    University VARCHAR(35),
+    Phone VARCHAR(15),
+    PRIMARY KEY(ID)
+);
+
+---------------
+# 2 --> Create:
+---------------
+
+=============================
+# create reg database & table 
+=============================
+
+CREATE DATABASE reg;
+
+CREATE TABLE reg.reg(
+    Name VARCHAR(15),
+    Password VARCHAR(25),
+    ConfirmPass VARCHAR(25),
+    Email VARCHAR(30)
+);
